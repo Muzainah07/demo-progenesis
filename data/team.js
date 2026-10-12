@@ -1,18 +1,26 @@
-// Single source of truth. Set NEXT_PUBLIC_SITE_URL in Vercel to your real domain.
-// Optional fields (linkedin, batch, etc.) are simply hidden when omitted.
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://progenesis.vercel.app").replace(/\/$/, "");
-
-const social = { instagram: "https://www.instagram.com/progenesis.team", facebook: "https://www.facebook.com/progenesis.team" };
+// Single source of truth. Add a new member by copying one block below.
+// Optional fields (field, batch, facebook, phone) are hidden when left out.
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://demo-progenesis-git-main-muzainah07s-projects.vercel.app").replace(/\/$/, "");
 
 export const team = [
-  { slug: "alex-morgan", name: "Alex Morgan", designation: "Software Engineer", field: "Full-Stack Development", batch: "2022 — 2026",
-    photo: "/team/alex-morgan.svg", email: "alex@progenesis.dev", linkedin: "https://www.linkedin.com/company/progenesis", ...social },
-  { slug: "sam-rivera", name: "Sam Rivera", designation: "Computer Scientist", field: "Algorithms & Machine Learning", batch: "2021 — 2025",
-    photo: "/team/sam-rivera.svg", email: "sam@progenesis.dev", linkedin: "https://www.linkedin.com/company/progenesis", ...social },
-  { slug: "jordan-lee", name: "Jordan Lee", designation: "Product Designer", field: "Interaction Design", batch: "2023 — 2027",
-    photo: "/team/jordan-lee.svg", email: "jordan@progenesis.dev", ...social },
-  { slug: "taylor-khan", name: "Taylor Khan", designation: "Event Lead", field: "Operations & Community", batch: "2022 — 2026",
-    photo: "/team/taylor-khan.svg", email: "taylor@progenesis.dev", linkedin: "https://www.linkedin.com/company/progenesis", ...social },
+  {
+    slug: "muzainah-faisal",
+    name: "Muzainah Faisal",
+    designation: "Computer Scientist",
+    photo: "/team/muzainah-faisal.png",
+    linkedin: "https://www.linkedin.com/in/muzainah-faisal-9b73ab28a/",
+    instagram: "https://www.instagram.com/muzainahkhan_/",
+    email: "muzainahfaisal.mf@gmail.com",
+  },
+  {
+    slug: "umaima-khan",
+    name: "Umaima Khan",
+    designation: "Web Developer",
+    photo: "/team/umaima-khan.png",
+    linkedin: "https://www.linkedin.com/in/umaima-khan-a58b4b375/",
+    instagram: "https://www.instagram.com/umamyxx/",
+    email: "umaimakhan6507@gmail.com",
+  },
 ];
 export const getMember = (slug) => team.find((m) => m.slug === slug);
 export const profileUrl = (slug, base = SITE_URL) => `${base}/team/${slug}`;
