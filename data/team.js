@@ -30,6 +30,7 @@ export const team = [
     name: "Umar Khan",
     designation: "Marketing Team",
     roleType: "marketing",
+    field: "Business Administration",
     photo: "/team/umar-khan.jpg",
     linkedin: "https://www.linkedin.com/in/muzainah-faisal-9b73ab28a/",
     instagram: "https://www.instagram.com/muzainahkhan_/",
