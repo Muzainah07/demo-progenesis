@@ -33,7 +33,7 @@ function PhotoAndBar({ member, w, h }) {
       <span className="barBrand">PROGENESIS</span>
       <motion.div className="photoWrap" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
         <motion.div className="photo" style={{ width: big, height: bigH, x, y, scale, clipPath: clip, backgroundColor: bg, transformOrigin: "0 0" }}>
-          <motion.img src={member.photo} alt={member.name} style={{ scale: zoom }} />
+          {member.photo && <motion.img src={member.photo} alt={member.name} style={{ scale: zoom }} />}
         </motion.div>
       </motion.div>
     </>
@@ -61,7 +61,7 @@ export default function ProfileView({ member: m }) {
   ].filter(([, href]) => href);
 
   return (
-    <main className="wrap">
+    <main className="wrap" data-role={m.roleType}>
       {vp && <PhotoAndBar key={`${vp.w}x${vp.h}`} member={m} w={vp.w} h={vp.h} />}
       <div className="spacer" />
       <motion.div className="heroText" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.8 }}>

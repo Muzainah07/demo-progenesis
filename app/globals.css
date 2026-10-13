@@ -42,3 +42,10 @@ font-size:clamp(1.15rem,5.2vw,1.5rem);font-weight:800;letter-spacing:-.03em;text
 .field.input,.fieldin{width:100%}
 input.field{display:block;width:100%;padding:12px;border:1px solid var(--fg);font:inherit;margin:8px 0 20px;background:#fff;color:#000}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+/* Role colours on the profile page (same shades as the ID cards) */
+.wrap[data-role="president"]{--navy:#3b0a6e}
+.wrap[data-role="co-president"]{--navy:#55199c}
+.wrap[data-role="co-lead"]{--navy:#7229d6}
+.wrap[data-role="technical"]{--navy:#8b5cf6}
+.wrap[data-role="module-lead"]{--navy:#a855f7}
+.wrap[data-role="marketing"]{--navy:#c026d3}
