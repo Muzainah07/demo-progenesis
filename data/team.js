@@ -25,6 +25,16 @@ export const team = [
     instagram: "https://www.instagram.com/umamyxx/",
     email: "umaimakhan6507@gmail.com",
   },
+  {
+    slug: "umar-khan",
+    name: "Umar Khan",
+    designation: "Marketing Team",
+    roleType: "marketing",
+    photo: "/team/umar-khan.jpg",
+    linkedin: "https://www.linkedin.com/in/muzainah-faisal-9b73ab28a/",
+    instagram: "https://www.instagram.com/muzainahkhan_/",
+    email: "muzainahfaisal.mf@gmail.com",
+  },
 ];
 export const getMember = (slug) => team.find((m) => m.slug === slug);
 export const profileUrl = (slug, base = SITE_URL) => `${base}/team/${slug}`;
