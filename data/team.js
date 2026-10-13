@@ -6,8 +6,9 @@ export const team = [
   {
     slug: "muzainah-faisal",
     name: "Muzainah Faisal",
-    designation: "Computer Scientist",
-    roleType: "co-lead",
+    designation: "Co-Lead — Web Development Team", 
+    roleType: "co-lead", 
+    field: "Computer Science", 
     photo: "/team/muzainah-faisal.jpg",
     linkedin: "https://www.linkedin.com/in/muzainah-faisal-9b73ab28a/",
     instagram: "https://www.instagram.com/muzainahkhan_/",
@@ -16,8 +17,9 @@ export const team = [
   {
     slug: "umaima-khan",
     name: "Umaima Khan",
-    designation: "Web Developer",
-    roleType: "co-president",
+    designation: "Module Lead — Frontend",
+    roleType: "module-lead",
+    field: "Computer Science",
     photo: "/team/umaima-khan.jpg",
     linkedin: "https://www.linkedin.com/in/umaima-khan-a58b4b375/",
     instagram: "https://www.instagram.com/umamyxx/",
