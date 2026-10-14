@@ -30,7 +30,7 @@ function PhotoAndBar({ member, w, h }) {
       <motion.div className="barText" style={{ opacity: barOpacity, x: barX }}>
         <b>{member.name}</b><span>{member.designation}</span>
       </motion.div>
-      <span className="barBrand">PROGENESIS</span>
+      <span className="barBrand">PROGENESIS'27</span>
       <motion.div className="photoWrap" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
         <motion.div className="photo" style={{ width: big, height: bigH, x, y, scale, opacity: bigOpacity, transformOrigin: "0 0" }}>
           {member.photo && <img src={member.photo} alt={member.name} />}
@@ -83,7 +83,7 @@ export default function ProfileView({ member: m }) {
           </Reveal>
         ))}
       </nav>
-      <p className="foot"><Link href="/">PROGENESIS · TEAM</Link></p>
+      <p className="foot"><Link href="/">PROGENESIS'27 · TEAM</Link></p>
     </main>
   );
 }
