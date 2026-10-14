@@ -64,10 +64,9 @@ export default function ProfileView({ member: m }) {
   return (
     <main className="wrap" data-role={m.roleType}>
       {vp && <PhotoAndBar key={`${vp.w}x${vp.h}`} member={m} w={vp.w} h={vp.h} />}
-      <div className="spacer">
+      <div className="spacer" style={vp ? { width: Math.min(vp.w * 0.78, 360), marginTop: vp.h * 0.1 } : undefined}>
   <span className="roleTop">{roleLabel}</span>
-  <span className="wordmark glow" aria-hidden>PROGENESIS</span>
-  <span className="wordmark" aria-hidden>PROGENESIS</span>
+  <span className="wordmark wm" aria-hidden><span className="wmA">PROGENESIS</span><span className="wmB">'27</span></span>
 </div>
 <motion.div className="heroText" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.8 }}>
   <h1 className="title">{m.name}</h1>
