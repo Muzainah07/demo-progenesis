@@ -106,3 +106,16 @@ white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 .spacer::before{content:"";position:absolute;z-index:0;left:-12%;right:-12%;top:6%;bottom:-4%;pointer-events:none;
 background:radial-gradient(closest-side,color-mix(in srgb,var(--role) 55%,transparent),transparent 75%)}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.idcard{animation:rise .7s cubic-bezier(.22,1,.36,1) both}
+.idcard:nth-child(2){animation-delay:.08s}
+.idcard:nth-child(3){animation-delay:.16s}
+.idcard:nth-child(4){animation-delay:.24s}
+.idcard::before{content:"";position:absolute;z-index:4;top:0;bottom:0;left:0;width:60%;pointer-events:none;
+background:linear-gradient(100deg,transparent,rgba(255,255,255,.18),transparent);transform:translateX(-130%) skewX(-12deg)}
+.idcard:hover::before,.idcard:active::before{transform:translateX(260%) skewX(-12deg);transition:transform .9s ease}
+@media(prefers-reduced-motion:reduce){.idcard{animation:none}}
+html{-webkit-tap-highlight-color:transparent}
+::selection{background:var(--magenta);color:#fff}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+.links a:active{background:rgba(185,164,255,.06)}
