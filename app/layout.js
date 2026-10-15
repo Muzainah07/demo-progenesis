@@ -10,7 +10,7 @@ export const metadata = {
   title: { default: "PROGENESIS'27", template: "%s · PROGENESIS'27" },
   description: "The team behind PROGENESIS hackathons.",
 };
-export const viewport = { themeColor: "#f5eefa", viewportFit: "cover" };
+export const viewport = { themeColor: "#090916" };
 
 export default function RootLayout({ children }) {
   return (<html lang="en"><body>{children}</body></html>);

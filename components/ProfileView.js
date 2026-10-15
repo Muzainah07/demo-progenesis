@@ -13,7 +13,7 @@ const ease = (t) => 1 - Math.pow(1 - t, 3);
 // Sizes mirror the CSS .spacer (min(78vw, 360px), 4:5, 10svh from top).
 function PhotoAndBar({ member, w, h }) {
   const { scrollY } = useScroll();
-  const big = Math.min(w * 0.78, 360), bigH = big * 1.25, top0 = h * 0.1, range = h * 0.5, S = 44;
+  const big = Math.min(w * 0.66, 290), bigH = big * 1.15, top0 = h * 0.1, range = h * 0.5, S = 44;
   const p = useTransform(scrollY, (v) => ease(clamp(v / range)));
   const x = useTransform(p, (t) => lerp((w - big) / 2, 16, t));
   const y = useTransform(p, (t) => lerp(top0, 14, t));
@@ -64,7 +64,7 @@ export default function ProfileView({ member: m }) {
   return (
     <main className="wrap" data-role={m.roleType}>
       {vp && <PhotoAndBar key={`${vp.w}x${vp.h}`} member={m} w={vp.w} h={vp.h} />}
-      <div className="spacer" style={vp ? { width: Math.min(vp.w * 0.78, 360), marginTop: vp.h * 0.1 } : undefined}>
+     <div className="spacer" style={vp ? { width: Math.min(vp.w * 0.66, 290), marginTop: vp.h * 0.1 } : undefined}>
   <span className="roleTop">{roleLabel}</span>
   <span className="wordmark wm" aria-hidden><span className="wmA">PROGENESIS</span><span className="wmB">'27</span></span>
 </div>
