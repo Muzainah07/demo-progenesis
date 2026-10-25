@@ -85,6 +85,7 @@ export default function ProfileView({ member: m }) {
         ))}
       </nav>
       <p className="foot"><Link href="/">PROGENESIS'27 · TEAM</Link></p>
+      <p className="lost"><a href="mailto:socialsprogenesis@gmail.com?subject=Found%20a%20PROGENESIS%20ID%20card">Found this ID card? Tell the team</a></p>
     </main>
   );
 }
