@@ -123,3 +123,20 @@ html{-webkit-tap-highlight-color:transparent}
 font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--lavender)}
 .lost{margin-top:14px;font-size:.75rem;color:var(--mute)}
 .lost a{border-bottom:1px solid var(--line)}
+/* ===== Cross-device safety ===== */
+/* header: name and brand can never collide */
+.barText{right:140px;overflow:hidden}
+.barText b,.barText span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:520px){.barText{right:16px}.barBrand{display:none}}
+
+/* long text wraps instead of overlapping */
+.title,.who,.field,.verified,.note{max-width:100%;overflow-wrap:anywhere}
+.roleTop{max-width:92vw;overflow:hidden;text-overflow:ellipsis}
+
+/* fallbacks for older phones that don't know svh / cqw */
+.idWord{font-size:1rem}
+@supports (font-size:1cqw){.idWord{font-size:7.4cqw}}
+.spacer{margin-top:10vh}
+@supports (height:1svh){.spacer{margin-top:10svh}}
+.links{margin-top:14vh}
+@supports (height:1svh){.links{margin-top:14svh}}
