@@ -119,3 +119,5 @@ html{-webkit-tap-highlight-color:transparent}
 ::selection{background:var(--magenta);color:#fff}
 :focus-visible{outline:2px solid var(--orange);outline-offset:3px}
 .links a:active{background:rgba(185,164,255,.06)}
+.verified{margin-top:14px;display:inline-block;padding:6px 12px;border:1px solid rgba(185,164,255,.35);border-radius:999px;
+font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--lavender)}

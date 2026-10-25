@@ -73,6 +73,7 @@ export default function ProfileView({ member: m }) {
   {teamLabel && <p className="who">{teamLabel}</p>}
   {m.field && <p className="field">{m.field}</p>}
   {m.batch && <p className="batch">{m.batch}</p>}
+  <p className="verified">✓ Verified PROGENESIS'27 member</p>
 </motion.div>
       <nav className="links" aria-label={`${m.name} links`}>
         {links.map(([label, href]) => (
