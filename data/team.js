@@ -1,7 +1,6 @@
 // Single source of truth. Add a new member by copying one block below.
 // Optional fields (field, batch, facebook, phone) are hidden when left out.
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://demo-progenesis-git-main-muzainah07s-projects.vercel.app").replace(/\/$/, "");
-
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://progenesis27.vercel.app").replace(/\/$/, "");
 export const team = [
   {
     slug: "muzainah-faisal",
